@@ -1,19 +1,57 @@
 page-home {
-
+  font-family: Helvetica;
 }
 
 .balance-header {
-  height: 30%;
+  height: 40%;
   width: 100%;
   display: block;
   background: linear-gradient(to right, blue, violet);
 }
 
-.transaction-amount {
-  font-size:18px;
+.transaction-list {
+  height: 60%;
+  width: 100%;
+  overflow-y: scroll;
+}
 
+.transaction-amount {
+  font-size:20pt;
+  color: red;
+}
+
+.transaction-impact {
+  font-size:20pt;
+  color: blue;
+}
+
+.transaction-offset {
+  font-size:20pt;
+  color: green;
 }
 
 .transaction-description {
-  font-size: 14px;
+  font-size: 16pt;
+}
+
+.category-name {
+  color: white;
+  font-size: 18pt;
+}
+
+.total {
+  color: white;
+  font-size: 36pt;
+}
+
+.total-amount {
+
+}
+
+.total-impact {
+
+}
+
+.total-offset {
+
 }
