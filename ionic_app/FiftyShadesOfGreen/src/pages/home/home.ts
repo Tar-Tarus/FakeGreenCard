@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 
+import { LocalNotifications } from '@ionic-native/local-notifications';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -27,6 +29,12 @@ export class HomePage {
                          ];
 
     this.impactmode = 0;
+
+    cordova.plugins.notification.local.schedule({
+    title: 'My first notification',
+    text: 'Thats pretty easy...',
+    foreground: true
+    });
   }
 
   public toggleImpactMode() : void {
