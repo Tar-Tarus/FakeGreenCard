@@ -1,3 +1,19 @@
 page-home {
 
 }
+
+.balance-header {
+  height: 30%;
+  width: 100%;
+  display: block;
+  background: linear-gradient(to right, blue, violet);
+}
+
+.transaction-amount {
+  font-size:18px;
+
+}
+
+.transaction-description {
+  font-size: 14px;
+}

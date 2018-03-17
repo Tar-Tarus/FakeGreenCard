@@ -1,17 +1,29 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+<ion-content>
+  <div class="balance-header">
+    <p>Test</p>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      Left Icon Button
+      <button ion-button outline item-end icon-left>
+        <ion-icon name="star"></ion-icon>
+        Left Icon
+      </button>
+    </ion-item>
+
+    <ion-item *ngFor="let tr of transactions">
+      <div style="width: 100px; float: left;">
+        <p class="transaction-description">{{ tr.descr }}</p>
+        <p>{{ tr.date }}</p>
+      </div>
+
+      <div style="width: 100px; float: right;">
+        <p class="transaction-amount">{{ tr.amount }}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
