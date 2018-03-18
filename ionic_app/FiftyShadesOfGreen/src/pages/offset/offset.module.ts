@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ImpactPage } from './impact';
+import { OffsetPage } from './offset';
 
 @NgModule({
   declarations: [
-    ImpactPage,
+    OffsetPage,
   ],
   imports: [
-    IonicPageModule.forChild(ImpactPage),
+    IonicPageModule.forChild(OffsetPage),
   ],
 })
-export class ImpactPageModule {}
-
-
+export class OffsetPageModule {}

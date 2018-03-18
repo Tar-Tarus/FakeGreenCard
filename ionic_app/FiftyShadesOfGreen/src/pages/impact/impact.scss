@@ -37,6 +37,10 @@ page-impact {
 	margin-top: 5px;
 }
 
+.ImpactRow:hover {
+	background-color: rgba(158, 158, 158, 0.4);
+}
+
 .ImpactScore {
 	text-align: right;
 	color: white;

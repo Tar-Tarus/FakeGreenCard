@@ -1,34 +1,33 @@
 <!--
-  Generated template for the ImpactPage page.
+  Generated template for the OffsetPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <ion-content>
-	<script src="node_modules/chart.js/Chart.min.js"></script>
-	<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>	
 
-	<div class="balance-header" style="height:100%;">
+		<div class="balance-header" style="height:100%;">
 
 		<div class="ScoreContainer">
 			<div style="height: 20%;">
 				<div style="height: 100%; width: 30px; margin: auto; padding-top: 20px">
 
-					<img src="assets/imgs/globe2.png" height="30" width="30"
+					<img src="assets/imgs/scales2.png" height="30" width="30"
 					style="float:right"></div>
 			</div>
-			<div class="Score">+7</div>
-			<div class="Score" style="font-size: 40px; height: 20%">Impact</div>
+			<div class="Score">30</div>
+			<div class="Score" style="font-size: 40px; height: 20%">Offset</div>
 	
 		</div>
 
-		<ion-grid style ="margin-top: 15%">
+		<ion-grid style="margin-top: 15%">
 		  <ion-row *ngFor="let obs of data" class="ImpactRow" (click)="openModal()">
 		    <ion-col col-10>
 		    	<div class="ImpactColumn" >
-		      		<i class="material-icons" style="font-size:30px">{{obs.icon}}</i>
+		      		<i class="{{obs.icon}}" style="font-size:30px"></i>
 		      		{{obs.name}}
 		      	</div>
 		    </ion-col>
