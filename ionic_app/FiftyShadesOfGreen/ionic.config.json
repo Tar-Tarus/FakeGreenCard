@@ -1,6 +1,6 @@
 {
   "name": "FiftyShadesOfGreen",
-  "app_id": "",
+  "app_id": "7d40bfbb",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
