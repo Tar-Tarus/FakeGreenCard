@@ -16,6 +16,8 @@ import { ViewController } from 'ionic-angular';
 })
 export class OffSetModalPage {
 
+  offset_items: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
 
   	this.offset_items = [{name:'National Park Service', date:'14-03-2017', offset:'1.20', img: 'assets/imgs/nps.png'},

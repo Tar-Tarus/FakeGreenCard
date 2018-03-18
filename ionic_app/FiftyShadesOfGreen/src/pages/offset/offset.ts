@@ -17,6 +17,8 @@ import { OffSetModalPage } from '../off-set-modal/off-set-modal';
 })
 export class OffsetPage {
 
+  data: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
 
   this.data = [{name:'Forestry', icon:'fa fa-tree', impact:7},

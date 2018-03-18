@@ -17,15 +17,15 @@ export class HomePage {
   impactmode: number;
 
   constructor(public navCtrl: NavController, private localNotifications: LocalNotifications) {
-    this.transactions = [{descr:'One', date:'12.03.2018', amount:-10, impact:42, offset:13},
-                         {descr:'Two', date:'12.03.2018', amount:-20, impact:42, offset:13},
-                         {descr:'Three', date:'12.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Four', date:'12.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Five', date:'12.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Six', date:'12.03.2018', amount:-30, impact:42, offset:13},
+    this.transactions = [{descr:'One', date:'18.03.2018', amount:-10, impact:42, offset:13},
+                         {descr:'Two', date:'17.03.2018', amount:-20, impact:42, offset:13},
+                         {descr:'Three', date:'17.03.2018', amount:-30, impact:42, offset:13},
+                         {descr:'Four', date:'15.03.2018', amount:-30, impact:42, offset:13},
+                         {descr:'Five', date:'15.03.2018', amount:-30, impact:42, offset:13},
+                         {descr:'Six', date:'13.03.2018', amount:-30, impact:42, offset:13},
                          {descr:'Seven', date:'12.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Eight', date:'12.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Nine', date:'12.03.2018', amount:-30, impact:42, offset:13},
+                         {descr:'Eight', date:'11.03.2018', amount:-30, impact:42, offset:13},
+                         {descr:'Nine', date:'11.03.2018', amount:-30, impact:42, offset:13},
                          ];
 
     this.impactmode = 0;
