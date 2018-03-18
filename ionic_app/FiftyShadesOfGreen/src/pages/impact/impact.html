@@ -1,0 +1,52 @@
+<!--
+  Generated template for the ImpactPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<ion-content>
+	<script src="node_modules/chart.js/Chart.min.js"></script>
+	<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+
+	<button ion-button block (click)="openModal()">Open Modal</button>
+
+	<div class="balance-header" style="height:100%;">
+
+		<div class="ScoreContainer">
+			<div style="height: 20%;">
+				<div style="height: 100%; width: 30px; margin: auto; padding-top: 20px">
+
+					<img src="assets/imgs/globe2.png" height="30" width="30"
+					style="float:right"></div>
+			</div>
+			<div class="Score">+7</div>
+			<div class="Score" style="font-size: 40px; height: 20%">Impact</div>
+
+		</div>
+
+		<ion-grid>
+		  <ion-row *ngFor="let obs of data" class="ImpactRow">
+		    <ion-col col-10>
+		    	<div class="ImpactColumn" >
+		      		<i class="material-icons" style="font-size:30px">{{obs.icon}}</i>
+		      		{{obs.name}}
+		      	</div>
+		    </ion-col>
+		    <ion-col>
+		    	<div class="ImpactScore">
+		    {{obs.impact}}
+		</div>
+		</ion-col>
+		</ion-row>
+		</ion-grid>
+
+
+
+
+
+
+  	</div>
+
+</ion-content>
