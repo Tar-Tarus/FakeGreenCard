@@ -1,28 +1,40 @@
 
+<script type="text/javascript" src="cordova.js"></script>
 
 <ion-content>
   <div class="balance-header">
+     <ion-slides (ionSlideDidChange)="toggleImpactMode();" loop="false">
+      <ion-slide>
+        <div class="category-name">Your Balance</div>
+        <div class="total-amount total">1234 CHF</div>
+      </ion-slide>
+      <ion-slide>
+        <div class="category-name">Your Impact</div>
+        <div class="total-impact total">832</div>
+      </ion-slide>
+      <ion-slide>
+        <div class="category-name">Your Offsets</div>
+        <div class="total-offset total">131</div>
+      </ion-slide>
+    </ion-slides>
   </div>
 
-  <ion-list>
-    <ion-item>
-      Left Icon Button
-      <button ion-button outline item-end icon-left>
-        <ion-icon name="star"></ion-icon>
-        Left Icon
-      </button>
-    </ion-item>
+  <div class="transaction-list">
+    <ion-list>
+      <ion-item *ngFor="let tr of transactions">
+        <div style="width: 100px; float: left;">
+          <span class="transaction-description">{{ tr.descr }}</span>
+          <p>{{ tr.date }}</p>
+        </div>
 
-    <ion-item *ngFor="let tr of transactions">
-      <div style="width: 100px; float: left;">
-        <p class="transaction-description">{{ tr.descr }}</p>
-        <p>{{ tr.date }}</p>
-      </div>
-
-      <div style="width: 100px; float: right;">
-        <p class="transaction-amount">{{ tr.amount }}</p>
-      </div>
-    </ion-item>
-  </ion-list>
+        <div style="width: 100px; float: right; vertical-align:middle;">
+          <div style="display:block; height:50px; line-height:50px; vertical-align:middle; text-align:right;">
+          <span class="{{ impactmode == 0 ? 'transaction-amount' : impactmode == 1 ? 'transaction-impact' : 'transaction-offset' }}">
+              {{ impactmode == 0 ? tr.amount : impactmode == 1 ? tr.impact : tr.offset }} {{ impactmode == 1 ? '' : 'CHF'}}</span>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div>
 
 </ion-content>

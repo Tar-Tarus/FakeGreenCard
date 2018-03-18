@@ -24,9 +24,9 @@ import { ModalPage } from '../modal/modal';
   selector: 'page-impact',
   templateUrl: 'impact.html',
 })
+
 export class ImpactPage {
-	
-	
+
   data: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
