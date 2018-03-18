@@ -2,24 +2,35 @@
 <script type="text/javascript" src="cordova.js"></script>
 
 <ion-content>
-  <div class="balance-header">
-     <ion-slides (ionSlideDidChange)="toggleImpactMode();" loop="false">
+  <div class="balance-header" style="height: 50%;">
+    <div style="height: 100px; width: 100px; margin: auto; padding-top: 25px">
+
+      <img src="assets/imgs/logo.png" height="100px" width="100px"
+      style="float:right">
+    </div>
+
+     <ion-slides (ionSlideDidChange)="toggleImpactMode();" loop="false" style="height: 150px;">
       <ion-slide>
         <div class="category-name">Your Balance</div>
         <div class="total-amount total">
             <span id="subscript">CHF</span>
-            <span>1234</span>
+            <span>1482</span>
             <span id="subscript"></span>
             <span id="subscript">'90</span>
         </div>
       </ion-slide>
       <ion-slide>
         <div class="category-name">Your Impact</div>
-        <div class="total-impact total">832</div>
+        <div class="total-impact total">-204</div>
       </ion-slide>
       <ion-slide>
         <div class="category-name">Your Offsets</div>
-        <div class="total-offset total">131</div>
+        <div class="total-offset total">
+          <span id="subscript">CHF</span>
+          <span>7</span>
+          <span id="subscript"></span>
+          <span id="subscript">'07</span>
+        </div>
       </ion-slide>
     </ion-slides>
   </div>

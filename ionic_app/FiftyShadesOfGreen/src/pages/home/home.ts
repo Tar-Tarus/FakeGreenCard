@@ -17,15 +17,12 @@ export class HomePage {
   impactmode: number;
 
   constructor(public navCtrl: NavController, private localNotifications: LocalNotifications) {
-    this.transactions = [{descr:'One', date:'18.03.2018', amount:-10, impact:42, offset:13},
-                         {descr:'Two', date:'17.03.2018', amount:-20, impact:42, offset:13},
-                         {descr:'Three', date:'17.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Four', date:'15.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Five', date:'15.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Six', date:'13.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Seven', date:'12.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Eight', date:'11.03.2018', amount:-30, impact:42, offset:13},
-                         {descr:'Nine', date:'11.03.2018', amount:-30, impact:42, offset:13},
+    this.transactions = [{descr:'Holy Cow', date:'18.03.2018', amount:-28, impact:-26, offset:1.28},
+                         {descr:'Migros', date:'17.03.2018', amount:-23, impact:-7, offset:0.36},
+                         {descr:'EasyJet', date:'17.03.2018', amount:-98, impact:-168, offset:4.5},
+                         {descr:'Co-Op', date:'15.03.2018', amount:-12, impact:3, offset:0.2},
+                         {descr:'Electricity', date:'15.03.2018', amount:-30, impact:8, offset:0},
+                         {descr:'Migros', date:'13.03.2018', amount:-67, impact:-14, offset:0.73},
                          ];
 
     this.impactmode = 0;
