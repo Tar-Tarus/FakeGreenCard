@@ -10,9 +10,7 @@ export class HomePage {
   transactions: any;
 
   constructor(public navCtrl: NavController) {
-    this.transactions = [{descr:'One', date:'12.03.2018', amount:-10},
-                         {descr:'Two', date:'12.03.2018', amount:-20},
-                         {descr:'Three', date:'12.03.2018', amount:-30},
+    this.transactions = [{name:'One', icon:'airplane', impact:-10}
                          ];
   }
 
