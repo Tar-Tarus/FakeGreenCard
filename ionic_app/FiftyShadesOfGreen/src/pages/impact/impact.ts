@@ -31,9 +31,9 @@ export class ImpactPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
 
-  this.data = [{name:'Food', icon:'restaurant', impact:-2},
+  this.data = [{name:'Shopping', icon:'shopping_cart', impact:7},
                {name: 'Travel', icon:'airplanemode_active', impact: -4},
-               {name:'Shopping', icon:'shopping_cart', impact:7},
+               {name:'Food', icon:'restaurant', impact:-2},
                {name:'Home', icon:'home', impact:6}
                          ];
 
@@ -48,4 +48,5 @@ export class ImpactPage {
     let myModal = this.modalCtrl.create(ModalPage);
     myModal.present();
   }
+
 }

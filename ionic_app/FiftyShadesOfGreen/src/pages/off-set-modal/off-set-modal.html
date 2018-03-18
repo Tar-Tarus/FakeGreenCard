@@ -15,29 +15,29 @@
 	</div>
 
 	<div style="height:140px; text-align: center">
-		<i class="material-icons" id="BigRestaurant">shopping_cart</i>
+		<i class="fa fa-tree" id="BigRestaurant" ></i>
 	</div>
 
 	<ul class="chart">
 	  <li>
-	    <span style="height:5%" title="M"></span>
+	    <span style="height:10%" title="M"></span>
 	  </li>
 	  <li>
-	    <span style="height:70%" title="T"></span>
+	    <span style="height:7%" title="T"></span>
 	  </li>
 	  <li>
-	    <span style="height:50%" title="W"></span>
+	    <span style="height:23%" title="W"></span>
 	  </li>
 	  <li>
-	    <span style="height:15%" title="T"></span>
+	    <span style="height:62%" title="T"></span>
 	  </li>
 	  <li>
-	    <span style="height:5%" title="F"></span>
+	    <span style="height:9%" title="F"></span>
 	  </li>
 	</ul> 
 
 	<ion-list style="margin-top:30px;">
-		<ion-item *ngFor="let item of shopping_items">
+		<ion-item *ngFor="let item of offset_items">
 
 		  <ion-grid style = 'font-style: "Helvetica"'>
 		  <ion-row>
@@ -52,8 +52,8 @@
 		    		<p>{{item.date}}</p>
 				</div>
 			</ion-col>
-			<ion-col col-2 style="text-align: right">
-				{{item.impact}}
+			<ion-col col-2 style="text-align: right, font-size: 20px;">
+				{{item.offset}}
 			</ion-col>
 			</ion-row>
 			</ion-grid>
