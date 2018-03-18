@@ -6,7 +6,12 @@
      <ion-slides (ionSlideDidChange)="toggleImpactMode();" loop="false">
       <ion-slide>
         <div class="category-name">Your Balance</div>
-        <div class="total-amount total">1234 CHF</div>
+        <div class="total-amount total">
+            <span id="subscript">CHF</span>
+            <span>1234</span>
+            <span id="subscript"></span>
+            <span id="subscript">'90</span>
+        </div>
       </ion-slide>
       <ion-slide>
         <div class="category-name">Your Impact</div>
