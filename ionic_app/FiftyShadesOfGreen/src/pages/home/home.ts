@@ -16,7 +16,7 @@ export class HomePage {
   transactions: any;
   impactmode: number;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private localNotifications: LocalNotifications) {
     this.transactions = [{descr:'One', date:'12.03.2018', amount:-10, impact:42, offset:13},
                          {descr:'Two', date:'12.03.2018', amount:-20, impact:42, offset:13},
                          {descr:'Three', date:'12.03.2018', amount:-30, impact:42, offset:13},
@@ -30,11 +30,14 @@ export class HomePage {
 
     this.impactmode = 0;
 
-    cordova.plugins.notification.local.schedule({
-    title: 'My first notification',
-    text: 'Thats pretty easy...',
-    foreground: true
+    // Schedule delayed notification
+    this.localNotifications.schedule({
+       text: 'Delayed ILocalNotification',
+       at: new Date(new Date().getTime() + 10),
+       led: 'FF0000',
+       sound: null
     });
+
   }
 
   public toggleImpactMode() : void {
